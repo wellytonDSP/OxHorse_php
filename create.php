@@ -1,9 +1,9 @@
 <?php
-    include_once("template/header.php");
+    include_once("templates/header.php");
 ?>
 
-<h1>Pagina Create</h1>
+    <h1>Pagina Create</h1>
 
 <?php
-    include_once("template/footer.php");
+    include_once("templates/footer.php");
 ?>
