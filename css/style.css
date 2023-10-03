@@ -1,4 +1,13 @@
-*{
-    box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-one {
+    background-color: #4ADE80;
+}
+
+div > li > a {
+    text-decoration: none;
 }
 

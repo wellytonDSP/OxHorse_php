@@ -21,7 +21,7 @@ include_once("config/process.php");
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <!-- Inclua o seu arquivo de estilo personalizado -->
-    <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css"> 
+    <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
     
     <title>OxHorse</title>
 </head>
@@ -50,7 +50,7 @@ include_once("config/process.php");
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-toggleable-lg box-shadow bg-custon-nav-pilaries p-0" backgroud-color="#BBF7D0">
+        <nav class="nav-one navbar navbar-expand-lg navbar-toggleable-lg box-shadow bg-custon-nav-pilaries p-0">
         <div class="container-fluid p-0 px-lg-5">
             <div class="navbar-collapse d-lg-inline-flex p-0 collapse show">
                 <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
@@ -59,11 +59,11 @@ include_once("config/process.php");
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Cuidados</a>
+                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Ferramentas</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Tecnologia</a>
+                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
                     </li>
                 </ul>
 
