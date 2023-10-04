@@ -28,7 +28,7 @@ include_once("config/process.php");
 <body>
     <header>
         <!-- Barra de navegação -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white">
             <div class="bar container-fluid">
                 <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="img/logo.png" alt="logo" width="120px" height="120px"></a>
                 <!-- Botão de alternância para dispositivos móveis -->
@@ -37,20 +37,33 @@ include_once("config/process.php");
                 </button>
                 <!-- Itens de navegação -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Sobre</a>
+                        </li>
+                    </ul>    
                     <ul class="navbar-nav ml-auto">
                         <!-- Adicione seus itens de menu aqui -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">Representante</a>
                         </li>
                         <li class="nav-item">
-                            <button><a class="nav-link" href="#">Login</a></button>
+                            <button><a class="button-login nav-link" href="#">Login</a></button>
                         </li>
                         <!-- Adicione mais itens de menu conforme necessário -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <nav class="nav-one navbar navbar-expand-lg navbar-toggleable-lg box-shadow bg-custon-nav-pilaries p-0">
+        <nav class="nav-two navbar navbar-expand-lg navbar-toggleable-lg box-shadow bg-custon-nav-pilaries p-0">
         <div class="container-fluid p-0 px-lg-5">
             <div class="navbar-collapse d-lg-inline-flex p-0 collapse show">
                 <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
@@ -64,12 +77,6 @@ include_once("config/process.php");
 
                     <li class="nav-item">
                         <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-end align-items-center gap-2">
-                    <li class="nav-item px-3">
-                        <a class="nav-link  link-menu hover-login text-white text-uppercase" href="/intranet/login" target="_blank"><i class="fa-solid fa-user me-3"></i>Login</a>
                     </li>
                 </ul>
             </div>
