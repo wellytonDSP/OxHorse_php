@@ -13,6 +13,9 @@ include_once("config/process.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inclua o Bootstrap CSS via CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Inclua os icons do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- Inclua o jQuery via CDN (se necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -20,6 +23,8 @@ include_once("config/process.php");
     <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
+
+
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
     
@@ -55,9 +60,6 @@ include_once("config/process.php");
                         <li class="nav-item">
                             <a class="nav-link" href="#">Representante</a>
                         </li>
-                        <li class="nav-item">
-                            <button><a class="button-login nav-link" href="#">Login</a></button>
-                        </li>
                         <!-- Adicione mais itens de menu conforme necessário -->
                     </ul>
                 </div>
@@ -77,6 +79,9 @@ include_once("config/process.php");
 
                     <li class="nav-item">
                         <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link text-uppercase " href="#"><i class="bi bi-person-fill mr-2"></i>Login</a>
                     </li>
                 </ul>
             </div>
