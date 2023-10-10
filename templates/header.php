@@ -46,44 +46,35 @@ include_once("config/process.php");
                         <li class="nav-item">
                             <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Início</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Contato</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Sobre</a>
                         </li>
-                    </ul>    
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Adicione seus itens de menu aqui -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Representante</a>
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Genética</a>
                         </li>
-                        <!-- Adicione mais itens de menu conforme necessário -->
+                        <li class="nav-item">
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Ferramentas</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
+                        </li>
+                        <ul class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
+                            <li class="nav-item">
+                                <button class="btn button"><a class="nav-link text-uppercase" href="#"><i class="bi bi-people-fill mr-2"></i>Representante</a></button>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill mr-2"></i>Login</a>
+                            </li>
+                        </ul>    
                     </ul>
                 </div>
             </div>
         </nav>
-        <nav class="nav-two navbar navbar-expand-lg navbar-toggleable-lg box-shadow bg-custon-nav-pilaries p-0">
-        <div class="container-fluid p-0 px-lg-5">
-            <div class="navbar-collapse d-lg-inline-flex p-0 collapse show">
-                <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Genética</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Ferramentas</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link text-uppercase " href="#"><i class="bi bi-person-fill mr-2"></i>Login</a>
-                    </li>
-                </ul>
+        <div class="nav-two container-fluid p-10 px-lg-5">
+            <div class="navbar-collapse d-lg-inline-flex p-10 collapse show">
             </div>
         </div>
     </nav>
