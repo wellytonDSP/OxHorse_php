@@ -35,7 +35,7 @@ include_once("config/process.php");
         <!-- Barra de navegação -->
         <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white">
             <div class="bar container-fluid">
-                <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="img/logo.png" alt="logo" width="120px" height="120px"></a>
+                <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="img/logo2.png" alt="logo" width="120px"></a>
                 <!-- Botão de alternância para dispositivos móveis -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

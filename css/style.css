@@ -11,4 +11,48 @@
     background-color: #1E6937;
 }
 
+.container-form{
+    border: 1px solid black;
+    width: 600px;
+    height: 100vh;
+
+}
+
+.form-module{
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 200px;
+}
+
+.logo-login{
+    text-align: center!important;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.logo-login > img{
+    width: 235px;
+}
+
+.btn-logar{
+    width: 100%;
+    background-color: #1E6937;
+    color:white;
+    border:none;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btn-logar:hover{
+    background-color: #298d4a;
+}
+
+p{
+    margin-top: 10px;
+    text-align: center;
+}
+
 
