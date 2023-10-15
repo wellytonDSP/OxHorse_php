@@ -1,7 +1,7 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
 include_once("config/url.php");
-include_once("config/process.php");
+include_once("config/connection.php");
 ?>
 
 <!-- Cabeçalho -->

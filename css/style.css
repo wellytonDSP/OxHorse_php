@@ -44,10 +44,12 @@
     border:none;
     height: 50px;
     border-radius: 10px;
+    transition: .2s;
 }
 
 .btn-logar:hover{
     background-color: #298d4a;
+    transition-delay: .2s;
 }
 
 p{
