@@ -2,7 +2,7 @@
     include_once("templates/header_login_cadastro.php");
 ?>
 <main>
-    <div class="container-form ml-auto">
+    <div class="container-form-login ml-auto">
         <div class="logo-login">
             <h1>Bem Vindo</h1>
             <h3>ao</h3>
