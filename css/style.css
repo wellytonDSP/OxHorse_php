@@ -10,11 +10,18 @@
 .nav-two {
     background-color: #1E6937;
 }
-
-.container-form{
+.container-form-login{
     border: 1px solid black;
     width: 600px;
     height: 100vh;
+<<<<<<< HEAD
+=======
+}
+.container-form-cadastro{
+    border: 1px solid black;
+    width: 600px;
+    height: 110vh;
+>>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
 }
 
 .form-module{
@@ -29,7 +36,11 @@
     width: 270px;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
     margin-top: 5%;
+=======
+    margin-top: 10%;
+>>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
     margin-bottom: 5%;
 }
 
