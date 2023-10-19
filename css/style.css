@@ -15,13 +15,13 @@
     border: 1px solid black;
     width: 600px;
     height: 100vh;
-
 }
 
 .form-module{
     margin-right: 100px;
     margin-left: 100px;
     height: 200px;
+
 }
 
 .logo-login{
@@ -29,7 +29,7 @@
     width: 270px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -44,15 +44,15 @@
     border:none;
     height: 50px;
     border-radius: 10px;
+    transition: .2s;
 }
 
 .btn-logar:hover{
     background-color: #298d4a;
+    transition-delay: .2s;
 }
 
 p{
     margin-top: 10px;
     text-align: center;
 }
-
-
