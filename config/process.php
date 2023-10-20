@@ -10,5 +10,15 @@
 
     echo $type;
 
+    if($type === "cadastro"){
+        $nomeUsuario = filter_input(INPUT_POST, "nomeUsuario");
+        $nomeCompleto = filter_input(INPUT_POST, "nomeCompleto");
+        $email = filter_input(INPUT_POST, "email");
+        $senha = filter_input(INPUT_POST, "senha");
+        $confirmacaoSenha = filter_input(INPUT_POST, "confirmacaoSenha");
+    } else if ($type === "login"){
+        $login = filter_input(INPUT_POST, "login");
+        $senhalogin = filter_input(INPUT_POST, "senhalogin");
+    }
 
 ?>

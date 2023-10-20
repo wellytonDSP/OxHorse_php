@@ -1,12 +1,7 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-<<<<<<< HEAD
 require_once("config/url.php");
 require_once("config/connection.php");
-=======
-include_once("config/url.php");
-include_once("config/connection.php");
->>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
 
 ?>
 
@@ -28,12 +23,15 @@ include_once("config/connection.php");
 
     <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-
-
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
-    
+
     <title>OxHorse</title>
+    <?php if (!empty($flassMessage["msg"])): ?>
+        <div class="msg-container">
+            <p class="msg"<?=$flassMessage?>><?=$flassMessage["msg"]?></p>
+        </div>
+    <?php endif;?>
+
 </head>
 <body>

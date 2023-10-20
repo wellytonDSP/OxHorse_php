@@ -1,12 +1,7 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-<<<<<<< HEAD
 require_once("config/url.php");
 require_once("config/connection.php");
-=======
-include_once("config/url.php");
-include_once("config/connection.php");
->>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
 ?>
 
 <!-- Cabeçalho -->
