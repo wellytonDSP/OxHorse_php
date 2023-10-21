@@ -22,6 +22,8 @@
             $usuario->senha = $data["senha"];
             $usuario->token = $data["token"];
 
+            return $usuario;
+
         }
         public function create(Usuario $usuario, $authUser = false){
 

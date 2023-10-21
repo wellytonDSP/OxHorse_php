@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
     require_once("templates/header_login_cadastro.php");
-=======
-    include_once("templates/header_login_cadastro.php");
->>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
 ?>
 <main>
     <div class="container-form-login ml-auto">

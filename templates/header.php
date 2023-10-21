@@ -1,12 +1,14 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-<<<<<<< HEAD
 require_once("config/url.php");
 require_once("config/connection.php");
-=======
-include_once("config/url.php");
-include_once("config/connection.php");
->>>>>>> 0343db4f40ebd090572aa335f20e27fa35c0b41b
+require_once("models/Menssagem.php");
+
+$menssagem = new Menssagem($BASE_URL);
+
+$flassMessage = $message->getMessage();
+
+
 ?>
 
 <!-- Cabeçalho -->
@@ -82,4 +84,9 @@ include_once("config/connection.php");
             <div class="navbar-collapse d-lg-inline-flex p-10 collapse show">
             </div>
         </div>
+        <?php if(!empty($flassMessage["msg"])):?>
+            <div class="msg-container">
+                <p class="msg <?=$flassMessage["type"] ?>"><?=$flassMessage["msg"]?></p>
+            </div>    
+        <?php endif; ?>
     </nav>
