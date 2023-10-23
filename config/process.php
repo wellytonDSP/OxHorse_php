@@ -15,9 +15,27 @@
         $nomeCompleto = filter_input(INPUT_POST, "nomeCompleto");
         $email = filter_input(INPUT_POST, "email");
         $senha = filter_input(INPUT_POST, "senha");
+<<<<<<< HEAD
         $confirmacaoSenha = filter_input(INPUT_POST, "confirmacaoSenha");
     
         if($nomeUsuario && $nomeCompleto && $email && $senha){
+=======
+        $senhaConfirma = filter_input(INPUT_POST, "senhaConfirma");
+
+        if($nomeUsuario && $nomeCompleto && $email && $senha){
+
+        }else{
+            $message->setMenssage("Campos invalidos revise os campos!");
+        }
+
+
+    }else if ($type === "login"){
+
+
+
+    }
+
+>>>>>>> dbbb018cbe7012fb2fb11e8eb2e5770413799945
 
             if($senha === $confirmacaoSenha){
                 if($usuarioDAO->findbyEmail($email) === false){

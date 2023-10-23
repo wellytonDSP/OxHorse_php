@@ -21,6 +21,12 @@
             $usuario->email = $data["email"];
             $usuario->senha = $data["senha"];
             $usuario->token = $data["token"];
+<<<<<<< HEAD
+=======
+
+            return $usuario;
+
+>>>>>>> dbbb018cbe7012fb2fb11e8eb2e5770413799945
         }
 
         public function create(Usuario $usuario, $authUser = false){
