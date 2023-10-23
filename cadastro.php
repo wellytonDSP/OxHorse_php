@@ -2,7 +2,7 @@
     require_once("templates/header_login_cadastro.php");
 ?>
 <main>
-    <div class="container-form-cadastro ml-auto">
+    <div class="container-form-login ml-auto">
         <div class="logo-login">
             <img src="img/logo2.png" alt="logo">
             <h3 class="mt-1">Cadastre-se</h3>

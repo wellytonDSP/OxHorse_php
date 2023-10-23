@@ -16,9 +16,21 @@
         $email = filter_input(INPUT_POST, "email");
         $senha = filter_input(INPUT_POST, "senha");
         $confirmacaoSenha = filter_input(INPUT_POST, "confirmacaoSenha");
-    } else if ($type === "login"){
+    
+        if($nomeUsuario && $nomeCompleto && $email && $senha){
+
+            if($senha === $confirmacaoSenha){
+                if($usuarioDAO->findbyEmail($email) === false){
+
+                }else{
+                    echo "Usuário já existe";
+                }
+            }   
+        }else{
+            echo "Campos não preenchidos!";
+        }
+    }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $senhalogin = filter_input(INPUT_POST, "senhalogin");
-    }
-
+    } 
 ?>
