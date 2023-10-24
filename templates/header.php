@@ -2,16 +2,6 @@
 // Inclua os arquivos necessários do seu projeto
 require_once("config/url.php");
 require_once("config/connection.php");
-<<<<<<< HEAD
-=======
-require_once("models/Menssagem.php");
-
-$menssagem = new Menssagem($BASE_URL);
-
-$flassMessage = $message->getMessage();
-
-
->>>>>>> dbbb018cbe7012fb2fb11e8eb2e5770413799945
 ?>
 
 <!-- Cabeçalho -->

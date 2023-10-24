@@ -7,8 +7,20 @@
         public $email;
         public $senha;
         public $token;
+        
 
+        // cria um token aleatorio
+        public function generateToken(){
+            return bin2hex(random_bytes(50));
+        }
+
+        public function generatePassword($senha){
+            return password_hash($senha, PASSWORD_DEFAULT);
+        }
+    
     }
+
+    
 
     Interface UsuarioDAOInterface{
 

@@ -6,6 +6,8 @@
     
     //verifica o type do formulario
 
+    $usuarioDao = new UsuarioDAO($conn, $BASE_URL);
+
     $type = filter_input(INPUT_POST, "type");
 
     echo $type;
@@ -15,35 +17,33 @@
         $nomeCompleto = filter_input(INPUT_POST, "nomeCompleto");
         $email = filter_input(INPUT_POST, "email");
         $senha = filter_input(INPUT_POST, "senha");
-<<<<<<< HEAD
         $confirmacaoSenha = filter_input(INPUT_POST, "confirmacaoSenha");
     
         if($nomeUsuario && $nomeCompleto && $email && $senha){
-=======
-        $senhaConfirma = filter_input(INPUT_POST, "senhaConfirma");
-
-        if($nomeUsuario && $nomeCompleto && $email && $senha){
-
-        }else{
-            $message->setMenssage("Campos invalidos revise os campos!");
-        }
-
-
-    }else if ($type === "login"){
-
-
-
-    }
-
->>>>>>> dbbb018cbe7012fb2fb11e8eb2e5770413799945
 
             if($senha === $confirmacaoSenha){
-                if($usuarioDAO->findbyEmail($email) === false){
+                if($usuarioDao->findByEmail($email) === false){
+                    $usuario = new Usuario;
+                    
+                    $finalSenha = $usuario->generatePassword($senha);
+                    $usuarioToken = $usuario->generateToken();
+                    
 
+                    $usuario->nomeUsuario = $nomeUsuario;
+                    $usuario->nomeCompleto = $nomeCompleto;
+                    $usuario->email = $email;
+                    $usuario->senha = $finalSenha;
+                    $usuario->token = $usuarioToken;
+            
+                    $auth = true;
+
+                    $usuarioDao -> create($usuario,$auth);
                 }else{
                     echo "Usuário já existe";
                 }
-            }   
+            }else{
+                echo"Senha invalida";
+            }  
         }else{
             echo "Campos não preenchidos!";
         }
