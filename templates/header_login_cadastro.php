@@ -2,6 +2,8 @@
 // Inclua os arquivos necessários do seu projeto
 require_once("config/url.php");
 require_once("config/connection.php");
+require_once("models/mensagem.php");
+
 
 ?>
 

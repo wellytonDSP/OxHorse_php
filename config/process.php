@@ -38,17 +38,30 @@
                     $auth = true;
 
                     $usuarioDao -> create($usuario,$auth);
+
+                
+                    header("Location: ../login.php");
+                    exit;
                 }else{
                     echo "Usuário já existe";
+                    header("Location: ../cadastro.php");
+                    exit;
                 }
             }else{
                 echo"Senha invalida";
+                header("Location: ../cadastro.php");
+                exit;
             }  
         }else{
             echo "Campos não preenchidos!";
+            header("Location: ../cadastro.php");
+            exit;
         }
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $senhalogin = filter_input(INPUT_POST, "senhalogin");
+        if($senha && $email){
+            
+        }
     } 
 ?>

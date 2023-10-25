@@ -2,6 +2,8 @@
 // Inclua os arquivos necessários do seu projeto
 require_once("config/url.php");
 require_once("config/connection.php");
+
+
 ?>
 
 <!-- Cabeçalho -->
@@ -77,9 +79,4 @@ require_once("config/connection.php");
             <div class="navbar-collapse d-lg-inline-flex p-10 collapse show">
             </div>
         </div>
-        <?php if(!empty($flassMessage["msg"])):?>
-            <div class="msg-container">
-                <p class="msg <?=$flassMessage["type"] ?>"><?=$flassMessage["msg"]?></p>
-            </div>    
-        <?php endif; ?>
     </nav>

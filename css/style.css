@@ -32,7 +32,7 @@
     margin-bottom: 5%;
 }
 
-.logo-login > img{
+.logo-login > a > img{
     width: 235px;
 }
 

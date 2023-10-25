@@ -4,7 +4,7 @@
 <main>
     <div class="container-form-login ml-auto">
         <div class="logo-login">
-            <img src="img/logo2.png" alt="logo">
+            <a href="index.php"><img src="img/logo2.png" alt="logo"></a>
             <h3 class="mt-1">Cadastre-se</h3>
         </div>
         

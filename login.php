@@ -1,12 +1,14 @@
 <?php
     require_once("templates/header_login_cadastro.php");
+    
+
 ?>
 <main>
     <div class="container-form-login ml-auto">
         <div class="logo-login">
             <h1>Bem Vindo</h1>
             <h3>ao</h3>
-            <img src="img/logo2.png" alt="logo">
+            <a href="index.php"><img src="img/logo2.png" alt="logo"></a>
         </div>
         <form class="form-module" action="<?=$BASE_URL?>config/process.php" method="POST">
             <input type="hidden" name="type" value="login">

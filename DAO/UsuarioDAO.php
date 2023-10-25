@@ -1,7 +1,6 @@
 <?php
 
-    require_once("../models/usuario.php");
-    require_once("../config/connection.php");
+    include_once("../models/usuario.php");
 
     class UsuarioDAO implements UsuarioDAOInterface{
         private $conn;
@@ -10,7 +9,7 @@
         public function __construct(PDO $conn,$url){
             $this->conn = $conn;
             $this->url = $url;
-            
+
         }
 
 
@@ -38,6 +37,11 @@
 
             $stmt->execute();
 
+            if($authUser){
+                $this -> setTokenToSession($usuario->token);
+            }
+
+
         }
         public function update(Usuario $usuario){
 
@@ -48,11 +52,18 @@
 
         }
         public function setTokenToSession($token, $redirect = true){
+            $_SESSION["token"] = $token;
 
+            if($redirect) {
+      
+              // Redireciona e apresenta mensagem de sucesso
+              
+      
+            }
 
         }
         public function authenticateUser($email,$senha){
-
+            $stmt = $this->conn->prepare("SELECT email, :senha");
 
         }
         public function findByEmail($email){
