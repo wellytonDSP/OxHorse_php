@@ -1,11 +1,11 @@
 <?php
-    require_once("../models/usuario.php");
-    require_once("../DAO/usuarioDAO.php");
-    require_once("url.php");
-    require_once("connection.php");
-    
+    include_once("../dao/UsuarioDAO.php");
+    include_once("url.php");
+    include_once("connection.php");
+
     //verifica o type do formulario
 
+    $mensagem = new Menssagem($BASE_URL);
     $usuarioDao = new UsuarioDAO($conn, $BASE_URL);
 
     $type = filter_input(INPUT_POST, "type");
@@ -38,30 +38,24 @@
                     $auth = true;
 
                     $usuarioDao -> create($usuario,$auth);
-
-                
-                    header("Location: ../login.php");
-                    exit;
                 }else{
-                    echo "Usuário já existe";
-                    header("Location: ../cadastro.php");
-                    exit;
+                    $mensagem->setMessage("Usuário já existe","error","block", "back");  
                 }
             }else{
-                echo"Senha invalida";
-                header("Location: ../cadastro.php");
-                exit;
+                $mensagem->setMessage("Senhas divergentes","error","block", "back");
             }  
         }else{
-            echo "Campos não preenchidos!";
-            header("Location: ../cadastro.php");
-            exit;
+            $mensagem->setMessage("Campos não preenchidos!","error","block", "back");
         }
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $senhalogin = filter_input(INPUT_POST, "senhalogin");
-        if($senha && $email){
-            
+        if($senha && $login){
+            $usuario = new Usuario;
+        }else{
+            echo "Campos deves ser preenchidos";
+            header("Location: ../public/login.php");
+            exit; 
         }
     } 
 ?>

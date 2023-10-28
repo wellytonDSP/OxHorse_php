@@ -1,5 +1,5 @@
 <?php
-    require_once("templates/header_login_cadastro.php");
+    require_once("../templates/header_login_cadastro.php");
     
 
 ?>
@@ -8,9 +8,9 @@
         <div class="logo-login">
             <h1>Bem Vindo</h1>
             <h3>ao</h3>
-            <a href="index.php"><img src="img/logo2.png" alt="logo"></a>
+            <a href="index.php"><img src="../img/logo2.png" alt="logo"></a>
         </div>
-        <form class="form-module" action="<?=$BASE_URL?>config/process.php" method="POST">
+        <form class="form-module" action="../config/process.php" method="POST">
             <input type="hidden" name="type" value="login">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nome de usuário ou E-mail</label>
@@ -33,5 +33,5 @@
 
 
 <?php
-    require_once("templates/footer.php");
+    require_once("../templates/footer.php");
 ?>

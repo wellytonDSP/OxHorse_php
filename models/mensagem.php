@@ -1,20 +1,17 @@
 <?php
 
     class Menssagem{
-        
-        private $url;
 
-        public function __construct($url) {
-            $this->url = $url;
-          }
-      
-          public function setMessage($msg, $type, $redirect = "") {
+
+          public function setMessage($msg, $type,$display,$redirect) {
       
             $_SESSION["msg"] = $msg;
             $_SESSION["type"] = $type;
+            $_Session["display"] = $display;
+            
       
             if($redirect != "back") {
-              header("Location: $this->url" . $redirect);
+              header("Location: ../" . $redirect);
             } else {
               header("Location:" . $_SERVER['HTTP_REFERER']);
             }
@@ -26,7 +23,8 @@
             if(!empty($_SESSION["msg"])) {
               return [
                 "msg" => $_SESSION["msg"],
-                "type" => $_SESSION["type"]
+                "type" => $_SESSION["type"],
+                "display" => $_SESSION["display"]
               ];
             } else {
               return false;
@@ -38,7 +36,7 @@
       
             $_SESSION["msg"] = "";
             $_SESSION["type"] = "";
+            $_SESSION["display"] = "";
       
           }
     }
-?>

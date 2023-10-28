@@ -1,7 +1,6 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-require_once("config/url.php");
-require_once("config/connection.php");
+    include_once("../config/process.php");
 
 
 ?>
@@ -28,7 +27,7 @@ require_once("config/connection.php");
 
 
     <!-- Inclua o seu arquivo de estilo personalizado -->
-    <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <title>OxHorse</title>
 </head>
@@ -37,7 +36,7 @@ require_once("config/connection.php");
         <!-- Barra de navegação -->
         <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white">
             <div class="bar container-fluid">
-                <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="img/logo2.png" alt="logo" width="120px"></a>
+                <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="../img/logo2.png" alt="logo" width="120px"></a>
                 <!-- Botão de alternância para dispositivos móveis -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

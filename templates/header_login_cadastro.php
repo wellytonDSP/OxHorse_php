@@ -1,8 +1,17 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-require_once("config/url.php");
-require_once("config/connection.php");
-require_once("models/mensagem.php");
+include_once("../config/process.php");
+include_once("../config/url.php");
+
+$mensagem = new Menssagem($BASE_URL);
+
+$flashMessage = $mensagem->getMessage();
+
+if(!empty($flashMessage["msg"])) {
+
+  $mensagem->clearMessage();
+
+}
 
 
 ?>
@@ -26,14 +35,9 @@ require_once("models/mensagem.php");
     <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Inclua o seu arquivo de estilo personalizado -->
-    <link rel="stylesheet" href="<?=$BASE_URL?>css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>OxHorse</title>
-    <?php if (!empty($flassMessage["msg"])): ?>
-        <div class="msg-container">
-            <p class="msg"<?=$flassMessage?>><?=$flassMessage["msg"]?></p>
-        </div>
-    <?php endif;?>
 
 </head>
 <body>

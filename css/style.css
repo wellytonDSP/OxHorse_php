@@ -15,7 +15,11 @@
     width: 600px;
     height: 100vh;
 }
-
+.form-left{
+    border: 1px solid black;
+    width: 600px;
+    height: 100vh;
+}
 .form-module{
     margin-right: 100px;
     margin-left: 100px;
