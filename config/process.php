@@ -1,12 +1,12 @@
 <?php
-    include_once("../dao/UsuarioDAO.php");
-    include_once("url.php");
-    include_once("connection.php");
+    include_once("../dao/UserDao.php");
+    include_once("Url.php");
+    include_once("Connection.php");
 
     //verifica o type do formulario
 
-    $mensagem = new Menssagem($BASE_URL);
-    $usuarioDao = new UsuarioDAO($conn, $BASE_URL);
+    $message = new Message($BASE_URL);
+    $userDao = new UserDAO($conn, $BASE_URL);
 
     $type = filter_input(INPUT_POST, "type");
 
@@ -22,11 +22,11 @@
         if($nomeUsuario && $nomeCompleto && $email && $senha){
 
             if($senha === $confirmacaoSenha){
-                if($usuarioDao->findByEmail($email) === false){
-                    $usuario = new Usuario;
+                if($userDao->findByEmail($email) === false){
+                    $user = new User;
                     
-                    $finalSenha = $usuario->generatePassword($senha);
-                    $usuarioToken = $usuario->generateToken();
+                    $finalSenha = $user->generatePassword($senha);
+                    $usuarioToken = $user->generateToken();
                     
 
                     $usuario->nomeUsuario = $nomeUsuario;
@@ -51,7 +51,7 @@
         $login = filter_input(INPUT_POST, "login");
         $senhalogin = filter_input(INPUT_POST, "senhalogin");
         if($senha && $login){
-            $usuario = new Usuario;
+            $usuario = new User;
         }else{
             echo "Campos deves ser preenchidos";
             header("Location: ../public/login.php");

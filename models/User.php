@@ -1,6 +1,6 @@
 <?php
 
-    class Usuario{
+    class User{
         public $id;
         public $nomeUsuario;
         public $nomeCompleto;
@@ -22,19 +22,19 @@
 
     
 
-    Interface UsuarioDAOInterface{
+    Interface UserDaoInterface{
 
 
         public function buildUsuario($data);
-        public function create(Usuario $usuario, $authUser = false);
-        public function update(Usuario $usuario);
+        public function create(User $usuario, $authUser = false);
+        public function update(User $usuario);
         public function verifyToken($protected = false);
         public function setTokenToSession($token, $redirect = true);
         public function authenticateUser($email,$senha);
         public function findByEmail($email);
         public function findById($id);
         public function findByToken($token);
-        public function chargePassword(Usuario $usuario);
+        public function chargePassword(User $usuario);
 
         
 

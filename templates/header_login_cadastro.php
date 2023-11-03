@@ -1,9 +1,9 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-include_once("../config/process.php");
-include_once("../config/url.php");
+include_once("../config/Process.php");
+include_once("../config/Url.php");
 
-$mensagem = new Menssagem($BASE_URL);
+$mensagem = new Message($BASE_URL);
 
 $flashMessage = $mensagem->getMessage();
 

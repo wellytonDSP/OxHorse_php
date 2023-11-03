@@ -1,9 +1,9 @@
 <?php
 
-    include_once("../models/Usuario.php");
-    include_once("../models/Mensagem.php");
+    include_once("../models/User.php");
+    include_once("../models/Message.php");
 
-    class UsuarioDAO implements UsuarioDAOInterface{
+    class UserDao implements UserDaoInterface{
         private $conn;
         private $url;
         private $mensagem;
@@ -11,12 +11,12 @@
         public function __construct(PDO $conn,$url){
             $this->conn = $conn;
             $this->url = $url;
-            $this->mensagem = new Menssagem($url);
+            $this->mensagem = new Message($url);
         }
 
 
         public function buildUsuario($data){
-            $usuario = new Usuario();
+            $usuario = new User();
 
             $usuario->id = $data["id"];
             $usuario->nomeUsuario = $data["nomeUsuario"];
@@ -26,7 +26,7 @@
             $usuario->token = $data["token"];
         }
 
-        public function create(Usuario $usuario, $authUser = false){
+        public function create(User $usuario, $authUser = false){
             $stmt = $this->conn->prepare("INSERT INTO usuario(
                 nomeUsuario,nomeCompleto,email,senha,token)
                 VALUES (:nomeUsuario,:nomeCompleto,:email,:senha,:token)");
@@ -45,12 +45,12 @@
 
 
         }
-        public function update(Usuario $usuario){
+        public function update(User $usuario){
 
 
         }
 
-        public function chargePassword(Usuario $usuario){
+        public function chargePassword(User $usuario){
 
 
         } 
@@ -114,7 +114,7 @@
         }
 
         public function authenticateUser($email,$senha){
-            $usuario = new Usuario();
+            $usuario = new User();
 
             $user = $this->findByEmail($email);
 

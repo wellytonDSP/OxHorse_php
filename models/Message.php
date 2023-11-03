@@ -1,6 +1,6 @@
 <?php
 
-    class Menssagem{
+    class Message{
 
 
           public function setMessage($msg, $type,$display,$redirect) {
