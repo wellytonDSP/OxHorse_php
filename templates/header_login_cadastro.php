@@ -1,7 +1,7 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-include_once("../config/Process.php");
-include_once("../config/Url.php");
+include_once("../config/process.php");
+include_once("../config/url.php");
 
 $mensagem = new Message($BASE_URL);
 

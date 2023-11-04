@@ -3,11 +3,10 @@
     class Message{
 
 
-          public function setMessage($msg, $type,$display,$redirect) {
+          public function setMessage($msg, $type,$redirect) {
       
             $_SESSION["msg"] = $msg;
             $_SESSION["type"] = $type;
-            $_Session["display"] = $display;
             
       
             if($redirect != "back") {

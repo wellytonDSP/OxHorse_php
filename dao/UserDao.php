@@ -6,47 +6,70 @@
     class UserDao implements UserDaoInterface{
         private $conn;
         private $url;
-        private $mensagem;
+        private $message;
 
         public function __construct(PDO $conn,$url){
             $this->conn = $conn;
             $this->url = $url;
-            $this->mensagem = new Message($url);
+            $this->message = new Message($url);
         }
 
 
         public function buildUsuario($data){
-            $usuario = new User();
+            $user = new User();
 
-            $usuario->id = $data["id"];
-            $usuario->nomeUsuario = $data["nomeUsuario"];
-            $usuario->nomeCompleto = $data["nomeCompleto"];
-            $usuario->email = $data["email"];
-            $usuario->senha = $data["senha"];
-            $usuario->token = $data["token"];
+            $user->id = $data["id"];
+            $user->nomeUsuario = $data["nomeUsuario"];
+            $user->nomeCompleto = $data["nomeCompleto"];
+            $user->email = $data["email"];
+            $user->senha = $data["senha"];
+            $user->token = $data["token"];
+
+            return $user;
         }
 
-        public function create(User $usuario, $authUser = false){
+        public function create(User $user, $authUser = false){
             $stmt = $this->conn->prepare("INSERT INTO usuario(
                 nomeUsuario,nomeCompleto,email,senha,token)
                 VALUES (:nomeUsuario,:nomeCompleto,:email,:senha,:token)");
 
-            $stmt->bindParam(":nomeUsuario",$usuario->nomeUsuario);
-            $stmt->bindParam(":nomeCompleto",$usuario->nomeCompleto);
-            $stmt->bindParam(":email",$usuario->email);
-            $stmt->bindParam(":senha",$usuario->senha);
-            $stmt->bindParam(":token",$usuario->token);
+            $stmt->bindParam(":nomeUsuario",$user->nomeUsuario);
+            $stmt->bindParam(":nomeCompleto",$user->nomeCompleto);
+            $stmt->bindParam(":email",$user->email);
+            $stmt->bindParam(":senha",$user->senha);
+            $stmt->bindParam(":token",$user->token);
 
             $stmt->execute();
 
             if($authUser){
-                $this -> setTokenToSession($usuario->token);
+                $this -> setTokenToSession($user->token);
             }
 
 
         }
-        public function update(User $usuario){
-
+        public function update(User $user,$redirect = true){
+            $stmt = $this->conn->prepare("UPDATE usuario SET
+            nomeUsuario = :nomeUsuario,
+            nomeCompleto = :nomeCompleto,
+            email = :email,
+            token = :token
+            WHERE id = :id
+          ");
+    
+          $stmt->bindParam(":name", $user->nomeUsuario);
+          $stmt->bindParam(":lastname", $user->nomeCompleto);
+          $stmt->bindParam(":email", $user->email);
+          $stmt->bindParam(":token", $user->token);
+          $stmt->bindParam(":id", $user->id);
+    
+          $stmt->execute();
+    
+          if($redirect) {
+    
+            // Redireciona para o perfil do usuario
+            $this->message->setMessage("Dados atualizados com sucesso!", "success", "editprofile.php");
+    
+          }
 
         }
 
@@ -67,9 +90,9 @@
                 if($stmt->rowCount() > 0) {
         
                   $data = $stmt->fetch();
-                  $usuario = $this->buildUsuario($data);
+                  $user = $this->buildUsuario($data);
           
-                  return $usuario;
+                  return $user;
         
                 } else {
                   return false;
@@ -85,14 +108,14 @@
                 // Pega o token da session
                 $token = $_SESSION["token"];
         
-                $usuario = $this->findByToken($token);
+                $user = $this->findByToken($token);
         
-                if($usuario) {
-                  return $usuario;
+                if($user) {
+                  return $user;
                 } else if($protected) {
         
                   // Redireciona para home caso não haja usuário
-                  $this->mensagem->setMessage("Faça a autenticação para acessar esta página.", "error","block", "index.php");
+                  $this->message->setMessage("Faça a autenticação para acessar esta página.", "error", "index.php");
         
                 }
         
@@ -108,47 +131,51 @@
             if($redirect) {
       
               // Redireciona e apresenta mensagem de sucesso0opo
-              $this->mensagem->setMessage("Cadastrado com sucesso","success","block","public/login.php");
+              $this->message->setMessage("Cadastrado com sucesso","success","public/login.php");
             }
 
         }
 
-        public function authenticateUser($email,$senha){
-            $usuario = new User();
+        public function authenticateUser($login, $senha) {
 
-            $user = $this->findByEmail($email);
-
-            // Checa se o usuário existe
+            $user = $this->findByLogin($login);
+      
             if($user) {
-
-                // Checa se a senha bate
-                if(password_verify($senha, $usuario->senha)) {
-
-                // Gera o token e coloca na session, sem redirecionar
-                $token = $usuario->generateToken();
-
+      
+              // Checar se as senhas batem
+              if(password_verify($senha, $user->senha)) {
+      
+                // Gerar um token e inserir na session
+                $token = $user->generateToken();
+      
                 $this->setTokenToSession($token, false);
-
-                // Atualiza token do usuário
-                $usuario->token = $token;
-
-                $this->update($usuario);
-
+      
+                // Atualizar token no usuário
+                $user->token = $token;
+      
+                $this->update($user, false);
+      
                 return true;
-
-                }
-
+      
+              } else {
+                return false;
+              }
+      
+            } else {
+      
+              return false;
+      
             }
+      
+          }
 
-            return false;
-        }
+        public function findByLogin($login){
 
-        public function findByEmail($email){
+            if($login != ""){
 
-            if($email != ""){
-
-                $stmt = $this->conn->prepare("SELECT * FROM usuario WHERE email = :email");
-                $stmt->bindParam(":email", $email);
+                $stmt = $this->conn->prepare("SELECT * FROM usuario WHERE email = :email or nomeUsuario = :nomeUsuario");
+                $stmt->bindParam(":email", $login);
+                $stmt->bindParam(":nomeUsuario", $login);
                 $stmt->execute();
                 
                 
@@ -156,9 +183,9 @@
                     
                     $data = $stmt->fetch();
 
-                    $usuario = $this->buildUsuario($data);
+                    $user = $this->buildUsuario($data);
                     
-                    return $usuario;
+                    return $user;
                 
                 }else{
                 
@@ -177,8 +204,6 @@
 
         }
         
-        
-           
     }
 
 

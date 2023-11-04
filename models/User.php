@@ -31,7 +31,7 @@
         public function verifyToken($protected = false);
         public function setTokenToSession($token, $redirect = true);
         public function authenticateUser($email,$senha);
-        public function findByEmail($email);
+        public function findByLogin($email);
         public function findById($id);
         public function findByToken($token);
         public function chargePassword(User $usuario);

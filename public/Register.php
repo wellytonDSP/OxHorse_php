@@ -1,5 +1,5 @@
 <?php
-require_once("../templates/Header_login_cadastro.php");
+require_once("../templates/header_login_cadastro.php");
 ?>
 <main>
     <div class="container">
@@ -56,5 +56,5 @@ require_once("../templates/Header_login_cadastro.php");
 
 
 <?php
-require_once("../templates/Footer.php");
+require_once("../templates/footer.php");
 ?>

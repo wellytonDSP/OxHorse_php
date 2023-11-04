@@ -1,7 +1,7 @@
 <?php
     include_once("../dao/UserDao.php");
-    include_once("Url.php");
-    include_once("Connection.php");
+    include_once("url.php");
+    include_once("connection.php");
 
     //verifica o type do formulario
 
@@ -22,40 +22,48 @@
         if($nomeUsuario && $nomeCompleto && $email && $senha){
 
             if($senha === $confirmacaoSenha){
-                if($userDao->findByEmail($email) === false){
+                if($userDao->findByLogin($email) === false || $userDao->findByLogin($nomeUsuario) === false){
                     $user = new User;
                     
                     $finalSenha = $user->generatePassword($senha);
                     $usuarioToken = $user->generateToken();
                     
 
-                    $usuario->nomeUsuario = $nomeUsuario;
-                    $usuario->nomeCompleto = $nomeCompleto;
-                    $usuario->email = $email;
-                    $usuario->senha = $finalSenha;
-                    $usuario->token = $usuarioToken;
+                    $user->nomeUsuario = $nomeUsuario;
+                    $user->nomeCompleto = $nomeCompleto;
+                    $user->email = $email;
+                    $user->senha = $finalSenha;
+                    $user->token = $usuarioToken;
             
                     $auth = true;
 
-                    $usuarioDao -> create($usuario,$auth);
+                    $userDao -> create($user,$auth);
                 }else{
-                    $mensagem->setMessage("Usuário já existe","error","block", "back");  
+                    $mensagem->setMessage("Usuário já existe","error", "back");  
                 }
             }else{
-                $mensagem->setMessage("Senhas divergentes","error","block", "back");
+                $mensagem->setMessage("Senhas divergentes","error", "back");
             }  
         }else{
-            $mensagem->setMessage("Campos não preenchidos!","error","block", "back");
+            $mensagem->setMessage("Campos não preenchidos!","error", "back");
         }
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $senhalogin = filter_input(INPUT_POST, "senhalogin");
-        if($senha && $login){
-            $usuario = new User;
+        if($senhalogin && $login){
+            if($userDao->authenticateUser($login,$senhalogin)){
+                echo "Sucesso";
+                header("Location: ../config/url.php");
+        
+            }else{
+                echo "Dados não batem";
+                header("Location: ../config/process.php");
+               
+            }
         }else{
             echo "Campos deves ser preenchidos";
             header("Location: ../public/login.php");
-            exit; 
+           
         }
     } 
 ?>
