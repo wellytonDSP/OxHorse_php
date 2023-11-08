@@ -15,7 +15,7 @@
         }
 
 
-        public function buildUsuario($data){
+        public function buildUser($data){
             $user = new User();
 
             $user->id = $data["id"];
@@ -73,7 +73,7 @@
 
         }
 
-        public function chargePassword(User $usuario){
+        public function chargePassword(User $user){
 
 
         } 
@@ -90,7 +90,7 @@
                 if($stmt->rowCount() > 0) {
         
                   $data = $stmt->fetch();
-                  $user = $this->buildUsuario($data);
+                  $user = $this->buildUser($data);
           
                   return $user;
         
@@ -131,30 +131,20 @@
             if($redirect) {
       
               // Redireciona e apresenta mensagem de sucesso0opo
-              $this->message->setMessage("Cadastrado com sucesso","success","public/login.php");
+              $this->message->setMessage("Cadastrado com sucesso.","success","public/login.php");
             }
 
         }
 
-        public function authenticateUser($login, $senha) {
+        public function authenticateUser($login, $password) {
 
             $user = $this->findByLogin($login);
       
             if($user) {
       
               // Checar se as senhas batem
-              if(password_verify($senha, $user->senha)) {
-      
-                // Gerar um token e inserir na session
-                $token = $user->generateToken();
-      
-                $this->setTokenToSession($token, false);
-      
-                // Atualizar token no usuário
-                $user->token = $token;
-      
-                $this->update($user, false);
-      
+              if(password_verify($password, $user->senha)) {
+                
                 return true;
       
               } else {
@@ -183,7 +173,7 @@
                     
                     $data = $stmt->fetch();
 
-                    $user = $this->buildUsuario($data);
+                    $user = $this->buildUser($data);
                     
                     return $user;
                 

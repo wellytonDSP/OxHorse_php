@@ -22,7 +22,7 @@
         if($nomeUsuario && $nomeCompleto && $email && $senha){
 
             if($senha === $confirmacaoSenha){
-                if($userDao->findByLogin($email) === false || $userDao->findByLogin($nomeUsuario) === false){
+                if($userDao->findByLogin($email) === false){
                     $user = new User;
                     
                     $finalSenha = $user->generatePassword($senha);
@@ -39,30 +39,25 @@
 
                     $userDao -> create($user,$auth);
                 }else{
-                    $mensagem->setMessage("Usuário já existe","error", "back");  
+                    $message->setMessage("Usuário já existe", "back");  
                 }
             }else{
-                $mensagem->setMessage("Senhas divergentes","error", "back");
+                $message->setMessage("Senhas divergentes", "back");
             }  
         }else{
-            $mensagem->setMessage("Campos não preenchidos!","error", "back");
+            $message->setMessage("Campos não preenchidos!", "back");
         }
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
-        $senhalogin = filter_input(INPUT_POST, "senhalogin");
-        if($senhalogin && $login){
-            if($userDao->authenticateUser($login,$senhalogin)){
-                echo "Sucesso";
-                header("Location: ../config/url.php");
-        
+        $password = filter_input(INPUT_POST, "password");
+        if($password && $login){
+            if($userDao->authenticateUser($login,$password)){
+                $message->setMessage("Sucesso!", "public/index.php");
             }else{
-                echo "Dados não batem";
-                header("Location: ../config/process.php");
-               
+                $message->setMessage("Email ou senha estão errados!", "back");
             }
         }else{
-            echo "Campos deves ser preenchidos";
-            header("Location: ../public/login.php");
+            $message->setMessage("Campos não preenchidos!", "public/register.php");
            
         }
     } 

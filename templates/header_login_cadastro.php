@@ -1,17 +1,13 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
 include_once("../config/process.php");
-include_once("../config/url.php");
 
-$mensagem = new Message($BASE_URL);
+include_once("../models/Message.php");
 
-$flashMessage = $mensagem->getMessage();
+$message = new Message($BASE_URL);
 
-if(!empty($flashMessage["msg"])) {
+$flashMessage = $message->getMessage();
 
-  $mensagem->clearMessage();
-
-}
 
 
 ?>
@@ -19,15 +15,17 @@ if(!empty($flashMessage["msg"])) {
 <!-- Cabeçalho -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inclua o Bootstrap CSS via CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
     <!-- Inclua os icons do Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <!-- Inclua o jQuery via CDN (se necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -40,4 +38,6 @@ if(!empty($flashMessage["msg"])) {
     <title>OxHorse</title>
 
 </head>
+
 <body>
+
