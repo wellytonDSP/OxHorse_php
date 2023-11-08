@@ -22,11 +22,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Senha</label>
-                        <input type="password" name="password" id="senhalogin" class="form-control"
+                        <input type="password" name="password" id="password" class="form-control"
                             placeholder="Digite sua senha">
                     </div>
                     <div class="mb-3 form-check ">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                         <label class="form-check-label" for="exampleCheck1">Manter-se conectado!</label>
                     </div>
                     <button type="submit" class="btn-logar justify-content-center text-uppercase" data-bs-toggle="modal" data-bs-target="#modal-1">entrar</button>

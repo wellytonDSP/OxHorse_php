@@ -50,7 +50,7 @@
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $password = filter_input(INPUT_POST, "password");
-        if($password && $login){
+        if($login && $password){
             if($userDao->authenticateUser($login,$password)){
                 $message->setMessage("Sucesso!", "public/index.php");
             }else{

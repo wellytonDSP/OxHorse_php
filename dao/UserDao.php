@@ -67,7 +67,7 @@
           if($redirect) {
     
             // Redireciona para o perfil do usuario
-            $this->message->setMessage("Dados atualizados com sucesso!", "success", "editprofile.php");
+            $this->message->setMessage("Dados atualizados com sucesso!", "public/login.php");
     
           }
 
@@ -115,7 +115,7 @@
                 } else if($protected) {
         
                   // Redireciona para home caso não haja usuário
-                  $this->message->setMessage("Faça a autenticação para acessar esta página.", "error", "index.php");
+                  $this->message->setMessage("Faça a autenticação para acessar esta página.", "public/index.php");
         
                 }
         
@@ -131,12 +131,13 @@
             if($redirect) {
       
               // Redireciona e apresenta mensagem de sucesso0opo
-              $this->message->setMessage("Cadastrado com sucesso.","success","public/login.php");
+              $this->message->setMessage("Cadastrado com sucesso.","public/login.php");
             }
 
         }
 
         public function authenticateUser($login, $password) {
+          $user = new User();
 
             $user = $this->findByLogin($login);
       
@@ -163,9 +164,8 @@
 
             if($login != ""){
 
-                $stmt = $this->conn->prepare("SELECT * FROM usuario WHERE email = :email or nomeUsuario = :nomeUsuario");
+                $stmt = $this->conn->prepare("SELECT * FROM usuario WHERE email = :email");
                 $stmt->bindParam(":email", $login);
-                $stmt->bindParam(":nomeUsuario", $login);
                 $stmt->execute();
                 
                 

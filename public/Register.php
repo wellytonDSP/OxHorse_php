@@ -2,7 +2,7 @@
 require_once("../templates/header_login_cadastro.php");
 ?>
 <main>
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <div class="col-md-6">
 
@@ -35,12 +35,12 @@ require_once("../templates/header_login_cadastro.php");
                         <input type="password" name="senha" class="form-control" id="senha"
                             placeholder="Digite sua senha" required>
                     </div>
-                    <div class="mb-1">
+                    <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Confirmar Senha</label>
                         <input type="password" name="confirmacaoSenha" class="form-control" id="confirmacaoSenha"
                             placeholder="Confirme sua senha" required>
                     </div>
-                    <div class="mb-1 form-check ">
+                    <div class="mb-3 form-check ">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                         <label class="form-check-label" for="exampleCheck1">Aceito os <a href="#">Termos de
                                 uso!</a></label>
