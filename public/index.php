@@ -14,7 +14,7 @@
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
                         placeholder="Digite seu nome">
                 </div>
                 <div class="mb-2">
@@ -24,8 +24,8 @@
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Digite um email para contato com DDD">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Digite um telefone para contato com (DDD)">
                 </div>
                 <button class="btn-logar mt-3">
                     Enviar

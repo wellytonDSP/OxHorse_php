@@ -3,11 +3,11 @@
 ?>
 <main>
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-md-6">
 
             </div>
-            <div class="container-form-login ml-auto col-md-6">
+            <div class="container-form-login ml-auto col-md-6 justify-content-center">
                 <div class="logo-login">
                     <h1>Bem Vindo</h1>
                     <h3>ao</h3>
@@ -16,7 +16,7 @@
                 <form class="form-module" action="../config/process.php" method="POST">
                     <input type="hidden" name="type" value="login">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nome de usuário ou E-mail</label>
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" name="login" id="login" class="form-control"
                             placeholder="Digite usuário ou email">
                     </div>

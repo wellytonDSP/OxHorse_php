@@ -37,7 +37,7 @@
 <body>
     <header>
         <!-- Barra de navegação -->
-        <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white ml-5 mr-5">
             <div class="bar container-fluid">
                 <a class="navbar-brand" href="<?=$BASE_URL?>index.php"><img src="../img/logo2.png" alt="logo"
                         width="120px"></a>
