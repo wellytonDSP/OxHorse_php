@@ -36,7 +36,7 @@
             </div>
         </div>
     </section>
-    <section class="banners d-flex flex-column justify-content-center text-center">
+    <section id="secao1"class="banners d-flex flex-column justify-content-center text-center">
         <div class="container text-center">
             <div class="row">
                 <div class="col">

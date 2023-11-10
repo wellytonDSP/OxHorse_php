@@ -61,14 +61,9 @@
                             <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Genética</a>
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">O que fornecemos?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Ferramentas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Bovinos</a>
-                        </li>
+                        
                         <ul
                             class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
