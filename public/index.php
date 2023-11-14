@@ -5,10 +5,10 @@ require_once("../templates/header.php");
     <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
         <div class="banners-titulo">
             <div class="container-fluid row">
-                <div class="col-md-6 justifycontent-center align-items-center text-center">
+                <div class="col-md-6 justify-content-center text-center">
 
-                    <p>Tudo que você procura na pecuária em um só lugar</p>
-
+                    <h1 class="section-text-1">Tudo que você procura na pecuária em um só lugar!</h1>
+                    <p class="section-text-1">Melhor site voltado a pecuaria do Brasil! </p>
                 </div>
                 <div class="container form-contact col-md-6">
                     <div class="title p-3">
