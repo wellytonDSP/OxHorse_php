@@ -67,10 +67,6 @@
                         <ul
                             class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
-                                <button class="btn button"><a class="nav-link text-uppercase" href="#"><i
-                                            class="bi bi-people-fill mr-2"></i>Representante</a></button>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link text-uppercase" href="login.php"><i
                                         class="bi bi-person-fill mr-2"></i>Login</a>
                             </li>
