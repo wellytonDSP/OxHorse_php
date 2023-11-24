@@ -27,6 +27,9 @@ $flassMessage = $message->getMessage();
     <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Inclua os Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -65,7 +68,12 @@ $flassMessage = $message->getMessage();
                         <ul class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
                                 <div class="container">
-                                    <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill mr-2"></i>Entrar</a>
+                                    <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill p-3"></i>Entrar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="container">
+                                    <a class="nav-link text-uppercase" href="#"><i class="bi bi-cart-fill p-3"></i>Carrinho</a>
                                 </div>
                             </li>
                         </ul>

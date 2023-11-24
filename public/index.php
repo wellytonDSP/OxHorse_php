@@ -6,7 +6,7 @@ require_once("../templates/header.php");
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/Fotos_Angus/Foto_01.jpeg" class="d-block w-100" alt="...">
+                    <img src="#" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="..." class="d-block w-100" alt="...">
@@ -37,9 +37,8 @@ require_once("../templates/header.php");
                     <div class="card " style="width: 18rem;">
                         <img src="../img/Fotos_Angus/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
                         <div class="card-body">
-                            <h5 class="card-title">Corte</h5>
-                            <p class="card-text">As melores opções de gado de corte você encontra aqui!</p>
-                            <a href="#" class="btn btn-primary">Acessar</a>
+                            <h5 class="card-title">BOVINA</h5>
+                            <a href="#" class="btn btn-primary">ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -47,10 +46,8 @@ require_once("../templates/header.php");
                     <div class="card" style="width: 18rem;">
                         <img src="../img/Fotos_Brahman/Fotos_03.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
-                            <h5 class="card-title">Leite</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">EQUINA</h5>
+                            <a href="#" class="btn btn-primary">ACESSAR</a>
                         </div>
                     </div>
                 </div>
@@ -58,10 +55,8 @@ require_once("../templates/header.php");
                     <div class="card" style="width: 18rem;">
                         <img src="../img/Fotos_Brahman/Fotos_03.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
-                            <h5 class="card-title">Materiais</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">SUINA</h5>
+                            <a href="#" class="btn btn-primary">ACESSAR</a>
                         </div>
                     </div>
                 </div>
