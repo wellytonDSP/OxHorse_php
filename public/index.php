@@ -30,7 +30,7 @@ require_once("../templates/header.php");
     <section id="secao-genetica" class="banners d-flex flex-column justify-content-center text-center">
         <div class="container text-center">
             <div class="container">
-                <h1 class="title-genetica">Genética</h1>
+                <h1 class="title-genetica">Espécies</h1>
             </div>
             <div class="container row ">
                 <div class="col card-group">
@@ -38,13 +38,13 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos_Angus/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
                         <div class="card-body">
                             <h5 class="card-title">BOVINA</h5>
-                            <a href="#" class="btn btn-primary">ACESSAR</a>
+                            <a href="./genetica.php" class="btn btn-primary">ACESSAR</a>
                         </div>
                     </div>
                 </div>
                 <div class="col card-group">
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/Fotos_Brahman/Fotos_03.jpeg" class="card-img-top" alt="foto-brahman">
+                        <img src="../img/Fotos_Crioulo/Foto_crioulo1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">EQUINA</h5>
                             <a href="#" class="btn btn-primary">ACESSAR</a>
@@ -53,7 +53,7 @@ require_once("../templates/header.php");
                 </div>
                 <div class="col card-group">
                     <div class="card" style="width: 18rem;">
-                        <img src="../img/Fotos_Brahman/Fotos_03.jpeg" class="card-img-top" alt="foto-brahman">
+                        <img src="../img/Fotos-Truie/Foto-truie1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">SUINA</h5>
                             <a href="#" class="btn btn-primary">ACESSAR</a>
@@ -62,102 +62,6 @@ require_once("../templates/header.php");
                 </div>
             </div>
 
-    </section>
-    <section id="secao-corte" class="banners d-flex flex-column justify-content-center text-center">
-        <div class="container text-center">
-            <div class="container">
-                <h1 class="title-genetica">Corte</h1>
-            </div>
-            <div class="container row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Génetica</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Pecuaria</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Ferramentas</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Representantes</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="secao-leite" class="banners d-flex flex-column justify-content-center text-center">
-        <div class="container text-center">
-            <div class="container">
-                <h1 class="title-genetica">Leite</h1>
-            </div>
-            <div class="container row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Génetica</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Pecuaria</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Ferramentas</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Representantes</h5>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 <?php

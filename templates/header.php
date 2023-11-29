@@ -41,39 +41,41 @@ $flassMessage = $message->getMessage();
         <!-- Barra de navegação -->
         <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white ml-5 mr-5">
             <div class="bar container-fluid">
-                <a class="navbar-brand" href="<?= $BASE_URL ?>index.php"><img src="../img/logo2.png" alt="logo" width="120px"></a>
+                <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php"><img src="../img/logo2.png" alt="logo" width="120px"></a>
                 <!-- Botão de alternância para dispositivos móveis -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Itens de navegação -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
+                    <ul class="navbar-nav ml-4 flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
                         <li class="nav-item">
                             <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#secao-contato">Genética</a>
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#secao-genetica">Genética</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Corte</a>
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Adultos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Leite</a>
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Filhotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Utilizatios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Representantes</a>
                         </li>
-
                         <ul class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
                                 <div class="container">
-                                    <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill p-3"></i>Entrar</a>
+                                    <a class="nav-link text-uppercase" href="#"><i class="bi bi-cart-fill p-3"></i>Carrinho</a>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="container">
-                                    <a class="nav-link text-uppercase" href="#"><i class="bi bi-cart-fill p-3"></i>Carrinho</a>
+                                    <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill p-3"></i>Entrar</a>
                                 </div>
                             </li>
                         </ul>
