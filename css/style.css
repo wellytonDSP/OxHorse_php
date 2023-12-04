@@ -96,6 +96,32 @@ p{
 
 }
 
+.product-titles {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #434343;
+    margin: 0;
+}
+
+.product-infos{
+    font-size: 15px;
+    padding: 3px;
+    color: #858585;
+}
+
+.price{
+    font-size: 18px;
+    color:#434343
+}
+
+.btn-cards{
+    font-size: 15px;
+    margin: 3px;
+    padding: 5px;
+}
 
 /* footer */
 

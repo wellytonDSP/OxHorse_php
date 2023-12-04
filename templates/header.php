@@ -19,7 +19,7 @@ $flassMessage = $message->getMessage();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Inclua os icons do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Inclua o jQuery via CDN (se necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -27,9 +27,10 @@ $flassMessage = $message->getMessage();
     <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Inclua os Icons via CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
+    <!-- Inclua o seu arquivo de estilo personalizado -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -41,19 +42,25 @@ $flassMessage = $message->getMessage();
         <!-- Barra de navegação -->
         <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white ml-5 mr-5">
             <div class="bar container-fluid">
-                <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php"><img src="../img/logo2.png" alt="logo" width="120px"></a>
+                <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php"><img src="../img/logo2.png" alt="logo"
+                        width="120px"></a>
                 <!-- Botão de alternância para dispositivos móveis -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Itens de navegação -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-4 flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
+                    <ul
+                        class="navbar-nav ml-4 flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
                         <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#">Início</a>
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase"
+                                href="<?= $BASE_URL ?>/index.php">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#secao-genetica">Genética</a>
+                            <a class="nav-link  link-menu link-nav-pilar text-uppercase"
+                                href="#secao-genetica">Genética</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Adultos</a>
@@ -65,17 +72,33 @@ $flassMessage = $message->getMessage();
                             <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Utilizatios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Representantes</a>
+                            <a class="nav-link link-menu link-nav-pilar text-uppercase"
+                                href="#secao1">Representantes</a>
                         </li>
-                        <ul class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
+                        <ul
+                            class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
-                                <div class="container">
-                                    <a class="nav-link text-uppercase" href="#"><i class="bi bi-cart-fill p-3"></i>Carrinho</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                    _msttexthash="875641" _msthash="300">Alternar para a direita fora da tela</button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel" _msttexthash="345787"
+                                            _msthash="301">Direito fora da tela</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Fechar" _mstaria-label="59709" _msthash="302"></button>
+                                    </div>
+                                    <div class="offcanvas-body" _msttexthash="14352" _msthash="303">
+                                        ...
+                                    </div>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <div class="container">
-                                    <a class="nav-link text-uppercase" href="login.php"><i class="bi bi-person-fill p-3"></i>Entrar</a>
+                                    <a class="nav-link text-uppercase" href="login.php"><i
+                                            class="bi bi-person-fill p-3"></i>Entrar</a>
                                 </div>
                             </li>
                         </ul>
