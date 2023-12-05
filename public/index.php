@@ -3,27 +3,7 @@ require_once("../templates/header.php");
 ?>
 <main>
     <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="#" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        
 
 
     </section>
@@ -38,7 +18,7 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos_Angus/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
                         <div class="card-body">
                             <h5 class="card-title">BOVINA</h5>
-                            <a href="./genetica.php" class="btn btn-primary">ACESSAR</a>
+                            <button class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>
@@ -47,7 +27,7 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos_Crioulo/Foto_crioulo1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">EQUINA</h5>
-                            <a href="#" class="btn btn-primary">ACESSAR</a>
+                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +36,7 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos-Truie/Foto-truie1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">SUINA</h5>
-                            <a href="#" class="btn btn-primary">ACESSAR</a>
+                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>

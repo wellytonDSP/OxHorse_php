@@ -20,6 +20,7 @@ $flassMessage = $message->getMessage();
 
     <!-- Inclua os icons do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- Inclua o jQuery via CDN (se necessário) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -30,7 +31,7 @@ $flassMessage = $message->getMessage();
 
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    
+
     <!-- Inclua o seu arquivo de estilo personalizado -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -78,21 +79,9 @@ $flassMessage = $message->getMessage();
                         <ul
                             class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
                             <li class="nav-item">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-                                    _msttexthash="875641" _msthash="300">Alternar para a direita fora da tela</button>
-
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel" _msttexthash="345787"
-                                            _msthash="301">Direito fora da tela</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                            aria-label="Fechar" _mstaria-label="59709" _msthash="302"></button>
-                                    </div>
-                                    <div class="offcanvas-body" _msttexthash="14352" _msthash="303">
-                                        ...
-                                    </div>
+                                <div class="container">
+                                    <a class="nav-link text-uppercase" href="login.php"><i
+                                            class="bi bi-cart-fill p-3"></i>Carrinho</a>
                                 </div>
                             </li>
                             <li class="nav-item">

@@ -49,6 +49,13 @@
     height: 50px;
     border-radius: 10px;
     transition: .2s;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-logar a {
+    text-decoration: none;
+    color:#ffffff;
 }
 
 .btn-logar:hover{
