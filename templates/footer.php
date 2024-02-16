@@ -1,6 +1,3 @@
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <footer id="text-center" class="footer">
     <section class="container p-4 pb-0 mb-4 text-center">
         <a class="btn p-4" href="#"><i class="bi bi-whatsapp"></i></a>

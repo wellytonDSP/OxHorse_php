@@ -1,23 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Cairo", sans-serif;
 
 }
 
+/* BARRA DE NAVEGAÇÃO  */
 
 
-.nav-one {
-    height: 100px;
-}
-
-.nav-two {
-    background-color: #1E6937;
-}
 
 /* login-register */
 .container-form-login{
-    
     width: 600px;
     height: 100vh;
 }

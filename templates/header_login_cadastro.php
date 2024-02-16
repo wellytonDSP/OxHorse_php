@@ -4,12 +4,6 @@ include_once("../config/process.php");
 
 include_once("../models/Message.php");
 
-$message = new Message($BASE_URL);
-
-$flashMessage = $message->getMessage();
-
-
-
 ?>
 
 <!-- Cabeçalho -->

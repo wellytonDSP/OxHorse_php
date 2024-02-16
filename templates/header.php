@@ -1,9 +1,6 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
 include_once("../config/process.php");
-$message = new Message($BASE_URL);
-
-$flassMessage = $message->getMessage();
 
 ?>
 
@@ -41,62 +38,45 @@ $flassMessage = $message->getMessage();
 <body>
     <header>
         <!-- Barra de navegação -->
-        <nav class="nav-one navbar navbar-expand-lg navbar-light bg-white ml-5 mr-5">
-            <div class="bar container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
                 <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php"><img src="../img/logo2.png" alt="logo"
                         width="120px"></a>
-                <!-- Botão de alternância para dispositivos móveis -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Itens de navegação -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul
-                        class="navbar-nav ml-4 flex-grow-1 justify-content-center justify-content-lg-start align-items-center gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase"
-                                href="<?= $BASE_URL ?>/index.php">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase"
-                                href="#secao-genetica">Genética</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Adultos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Filhotes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase" href="#secao1">Utilizatios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-menu link-nav-pilar text-uppercase"
-                                href="#secao1">Representantes</a>
-                        </li>
-                        <ul
-                            class="navbar-nav flex-grow-2 justify-content-center justify-content-lg-start align-items-center ml-auto">
+                
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav justify-content-center align-items-center gap-2">
                             <li class="nav-item">
-                                <div class="container">
-                                    <a class="nav-link text-uppercase" href="login.php"><i
-                                            class="bi bi-cart-fill p-3"></i>Carrinho</a>
-                                </div>
+                                <a class="nav-link link-menu link-nav-pilar text-uppercase"
+                                    href="<?= $BASE_URL ?>/index.php">Início</a>
                             </li>
                             <li class="nav-item">
-                                <div class="container">
-                                    <a class="nav-link text-uppercase" href="login.php"><i
-                                            class="bi bi-person-fill p-3"></i>Entrar</a>
-                                </div>
+                                <a class="nav-link  link-menu link-nav-pilar text-uppercase"
+                                    href="#secao-genetica">Especies</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Materiais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-menu link-nav-pilar text-uppercase"
+                                    href="#secao1">Profissionais</a>
+                            </li>
+                            <ul
+                                class="navbar-nav justify-content-center justify-content-lg-start align-items-center ml-auto">
+                                <li class="nav-item">
+                                    <div class="container">
+                                        <a class="nav-link text-uppercase" href="login.php"><i
+                                                class="bi bi-person-fill p-3"></i>Entrar</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="container">
+                                        <a class="nav-link text-uppercase" href="login.php"><i
+                                                class="bi bi-cart-fill p-3"></i>Carrinho</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </ul>
-                    </ul>
-                </div>
+                    </div>
             </div>
-        </nav>
-        <div class="nav-two container-fluid p-10 px-lg-5">
-            <div class="navbar-collapse d-lg-inline-flex p-10 collapse show">
-            </div>
-        </div>
         </nav>

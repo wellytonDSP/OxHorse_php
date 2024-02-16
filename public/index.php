@@ -1,11 +1,9 @@
 <?php
 require_once("../templates/header.php");
 ?>
-<main>
-    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
-        
-
-
+<main class="container">
+    <section class="banners d-flex flex-column justify-content-center text-center mt-3">
+       
     </section>
     <section id="secao-genetica" class="banners d-flex flex-column justify-content-center text-center">
         <div class="container text-center">
@@ -18,7 +16,8 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos_Angus/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
                         <div class="card-body">
                             <h5 class="card-title">BOVINA</h5>
-                            <button class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
+                            <button class="btn-logar justify-content-center text-uppercase"><a
+                                    href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>
@@ -27,7 +26,8 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos_Crioulo/Foto_crioulo1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">EQUINA</h5>
-                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
+                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a
+                                    href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,8 @@ require_once("../templates/header.php");
                         <img src="../img/Fotos-Truie/Foto-truie1.jpeg" class="card-img-top" alt="foto-brahman">
                         <div class="card-body">
                             <h5 class="card-title">SUINA</h5>
-                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a href="genetica.php">ACESSAR</a></button>
+                            <button href="#" class="btn-logar justify-content-center text-uppercase"><a
+                                    href="genetica.php">ACESSAR</a></button>
                         </div>
                     </div>
                 </div>
