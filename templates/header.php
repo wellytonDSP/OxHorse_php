@@ -12,24 +12,12 @@ include_once("../config/process.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Inclua o Bootstrap CSS via CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Inclua os icons do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <!-- Inclua o jQuery via CDN (se necessário) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-    <!-- Inclua o Bootstrap JavaScript via CDN (se necessário) -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <!-- Inclua o seu arquivo de estilo personalizado -->
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
-    <!-- Inclua o seu arquivo de estilo personalizado -->
+    <!-- Incluindo CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
     <title>OxHorse</title>
@@ -38,45 +26,36 @@ include_once("../config/process.php");
 <body>
     <header>
         <!-- Barra de navegação -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <nav class="navbar navbar-expand-md bg-light">
             <div class="container">
-                <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php"><img src="../img/logo2.png" alt="logo"
-                        width="120px"></a>
-                
+                <img src="../img/logo/logo.png" class="card-img-top mx-3" alt="logo"
+                    style="width: 120px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-2 mb-2 mb-lg-0" style="margin-right: 45px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carrinho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/login.php">Entrar</a>
+                        </li>
+                    </ul>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav justify-content-center align-items-center gap-2">
-                            <li class="nav-item">
-                                <a class="nav-link link-menu link-nav-pilar text-uppercase"
-                                    href="<?= $BASE_URL ?>/index.php">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  link-menu link-nav-pilar text-uppercase"
-                                    href="#secao-genetica">Especies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  link-menu link-nav-pilar text-uppercase" href="#">Materiais</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-menu link-nav-pilar text-uppercase"
-                                    href="#secao1">Profissionais</a>
-                            </li>
-                            <ul
-                                class="navbar-nav justify-content-center justify-content-lg-start align-items-center ml-auto">
-                                <li class="nav-item">
-                                    <div class="container">
-                                        <a class="nav-link text-uppercase" href="login.php"><i
-                                                class="bi bi-person-fill p-3"></i>Entrar</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="container">
-                                        <a class="nav-link text-uppercase" href="login.php"><i
-                                                class="bi bi-cart-fill p-3"></i>Carrinho</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </ul>
-                    </div>
+                </div>
             </div>
         </nav>
