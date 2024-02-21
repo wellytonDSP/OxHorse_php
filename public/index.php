@@ -6,10 +6,10 @@ require_once("../templates/header.php");
         data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
-                <img src="../img/banner/1.png" class="card-img-top" alt="logo">
+                <img src="../img/banner/1.png" class="card-img-top img-banner" alt="logo">
             </div>
             <div class="carousel-item active " data-bs-interval="2000">
-                <img src="../img/banner/3.png" class="card-img-top" alt="logo">
+                <img src="../img/banner/3.png" class="card-img-top img-banner" alt="logo">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -26,7 +26,7 @@ require_once("../templates/header.php");
 
     <h2 class="title mt-3 mb-3" style="text-align: center;">Categorias</h3>
         <div class="container row mx-auto g-3">
-            <div class="col-6 col-md-4 col-xxl-3">
+            <div class="col-5 col-md-3 col-xxl-3">
                 <div class="card">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
@@ -37,7 +37,7 @@ require_once("../templates/header.php");
                     </svg>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xxl-3">
+            <div class="col-5 col-md-3 col-xxl-3">
                 <div class="card">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
@@ -48,7 +48,7 @@ require_once("../templates/header.php");
                     </svg>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xxl-3">
+            <div class="col-5 col-md-3 col-xxl-3">
                 <div class="card">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
@@ -59,7 +59,7 @@ require_once("../templates/header.php");
                     </svg>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xxl-3">
+            <div class="col-5 col-md-3 col-xxl-3">
                 <div class="card">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
@@ -71,7 +71,7 @@ require_once("../templates/header.php");
                 </div>
             </div>
         </div>
-
+        
         <h2 class="title mb-3 mt-3" style="text-align: center;">Mais populares</h2>
         <div class="container row mx-auto g-3">
                 <div class="col-6 col-md-4 col-xxl-4">
@@ -201,9 +201,6 @@ require_once("../templates/header.php");
                     </div>
                 </div>
         </div>
-
-
-
 </main>
 <?php
 require_once("../templates/footer.php");

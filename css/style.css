@@ -1,7 +1,11 @@
 
 /* BARRA DE NAVEGAÇÃO  */
 
+/* PAGINA PRINCIPAL */
 
+.img-banner{
+    height: 600px;
+}
 
 /* PAGINA DE LOGIN */
 
@@ -14,5 +18,17 @@
 
 
 
-/* footer */
+/* RESPONSIVIDADE */
 
+
+@media screen and (max-width: 1024px) {
+    .img-banner{
+        height:400px;
+    }   
+}
+
+@media screen and (max-width: 540px) {
+    .img-banner{
+        height:200px;
+    }   
+}
