@@ -7,6 +7,10 @@
     height: 600px;
 }
 
+.divs-vantagens {
+    width: 380px;
+}
+
 /* PAGINA DE LOGIN */
 
 
@@ -31,4 +35,11 @@
     .img-banner{
         height:200px;
     }   
+}
+
+
+@media scren and (max-width: 375px){
+    .divs-vantagens{
+        width: 200px;
+    }
 }

@@ -51,11 +51,13 @@ include_once("../config/process.php");
                         <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
                     </form>
                     <ul class="navbar-nav ml-2 mb-2 mb-lg-0" style="margin-right: 45px;">
-                        <li class="d-flex nav-item">
-                            <button class="btn btn-success mx-3" href="../public/carrinho.php"><i class="bi bi-cart-fill" style="margin-right: 5px;"></i>Carrinho</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../public/login.php"><i class="bi bi-cart-fill"
+                                    style="margin-right: 5px;"></i>Carrinho</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-success mx-3" href="../public/login.php"><i class="bi bi-person-fill" style="margin-right: 5px;"></i>Entrar</a>
+                            <a class="nav-link" href="../public/login.php"><i class="bi bi-person-fill"
+                                    style="margin-right: 5px;"></i>Entrar</a>
                         </li>
                     </ul>
                 </div>
