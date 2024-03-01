@@ -19,7 +19,7 @@ include_once("../config/process.php");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Incluindo CSS -->
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="shortcut icon" href="../img/Ico/logo2.ico" type="image/x-icon">
     <title>OxHorse</title>
 </head>
 
@@ -40,7 +40,7 @@ include_once("../config/process.php");
                             <a class="nav-link" href="../public/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link " href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Categorias</a>
@@ -56,7 +56,7 @@ include_once("../config/process.php");
                                     style="margin-right: 5px;"></i>Carrinho</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/login.php"><i class="bi bi-person-fill"
+                            <a class="nav-link btn btn-success" href="../public/login.php"><i class="bi bi-person-fill"
                                     style="margin-right: 5px;"></i>Entrar</a>
                         </li>
                     </ul>

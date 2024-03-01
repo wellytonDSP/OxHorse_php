@@ -11,15 +11,18 @@
     width: 380px;
 }
 
-/* PAGINA DE LOGIN */
+.section-vantagens{
+    background-color: #dee2e6;
+    padding-bottom: 50px;
+    padding-top:50px;
 
+}
+/* PAGINA DE ENTRADA E REGISTRO */
 
-
-
-/*  */
-
-
-
+.div-entrada{
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
 
 
 /* RESPONSIVIDADE */
