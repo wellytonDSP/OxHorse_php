@@ -24,6 +24,34 @@
     border-radius: 10px;
 }
 
+/* Venda */
+
+.row-cols-md-3>* {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+
+.title-card{
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.subtitle-card{
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.price{
+    margin:0px;
+    font-size: 20px;
+}
+
+.quantity{
+    margin:0px;
+    font-size: 15px;
+}
+
 
 /* RESPONSIVIDADE */
 

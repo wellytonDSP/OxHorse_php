@@ -40,10 +40,10 @@ include_once("../config/process.php");
                             <a class="nav-link" href="../public/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Sobre</a>
+                            <a class="nav-link " href="#">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias</a>
+                            <a class="nav-link" href="#">Sobre</a>
                         </li>
                     </ul>
                     <form class="d-flex mx-auto" role="search">
