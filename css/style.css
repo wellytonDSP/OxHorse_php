@@ -29,20 +29,18 @@
 }
 
 /* Venda */
-
-.row-cols-md-3>* {
-    flex: 0 0 auto;
-    width: 30%;
+.filter{
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-
 .title-card{
-    font-size: 20px;
+    font-size: 15px;
     opacity: 70%;
 }
 
 .subtitle-card{
-    font-size: 15px;
+    font-size: 10px;
     opacity: 50%;
 }
 
@@ -52,9 +50,13 @@
 }
 
 .quantity{
-    font-size: 15px;
+    font-size: 13px;
 }
 
+.parcelas{
+    font-size: 10px;
+    color:#009834;
+}
 
 /* RESPONSIVIDADE */
 
