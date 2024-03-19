@@ -1,4 +1,8 @@
 
+*{
+    font-family: montserrat;
+}
+
 /* BARRA DE NAVEGAÇÃO  */
 
 /* PAGINA PRINCIPAL */
@@ -43,12 +47,11 @@
 }
 
 .price{
-    margin:0px;
     font-size: 20px;
+    font-weight: 550;
 }
 
 .quantity{
-    margin:0px;
     font-size: 15px;
 }
 
