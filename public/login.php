@@ -22,7 +22,7 @@
                                 placeholder="Digite sua senha">
                         </div>
                         <div class="container mb-4">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Manter-se conectado!</label>
                         </div>
                         <div class="container mb-4 d-flex justify-content-center">

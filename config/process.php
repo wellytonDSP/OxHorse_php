@@ -1,7 +1,7 @@
 <?php
-    include_once("../dao/UserDao.php");
-    include_once("url.php");
-    include_once("connection.php");
+    require_once("../dao/UserDao.php");
+    require_once("url.php");
+    require_once("connection.php");
 
     //verifica o type do formulario
 
@@ -36,28 +36,29 @@
                     $user->token = $usuarioToken;
             
                     $auth = true;
-
+                    
                     $userDao -> create($user,$auth);
+                     
                 }else{
-                    $message->setMessage("Usuário já existe", "back");  
+                    $message->setMessage("Usuário já existe","alert-danger", "back");  
                 }
             }else{
-                $message->setMessage("Senhas divergentes", "back");
+                $message->setMessage("Senhas divergentes","alert-danger", "back");
             }  
         }else{
-            $message->setMessage("Campos não preenchidos!", "back");
+            $message->setMessage("Campos não preenchidos!","alert-danger", "back");
         }
     }else if ($type === "login"){
         $login = filter_input(INPUT_POST, "login");
         $password = filter_input(INPUT_POST, "password");
         if($login && $password){
             if($userDao->authenticateUser($login,$password)){
-                $message->setMessage("Sucesso!", "public/index.php");
+                $message->setMessage("Usuário logado com sucesso!","alert-success", "public/index.php");
             }else{
-                $message->setMessage("Email ou senha estão errados!", "back");
+                $message->setMessage("Email ou senha estão errados!","alert-danger", "back");
             }
         }else{
-            $message->setMessage("Campos não preenchidos!", "public/register.php");
+            $message->setMessage("Campos não preenchidos!","alert-danger", "back");
            
         }
     } 

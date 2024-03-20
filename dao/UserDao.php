@@ -67,7 +67,7 @@
           if($redirect) {
     
             // Redireciona para o perfil do usuario
-            $this->message->setMessage("Dados atualizados com sucesso!", "public/login.php");
+            $this->message->setMessage("Dados atualizados com sucesso!","alert-success", "public/login.php");
     
           }
 
@@ -115,7 +115,7 @@
                 } else if($protected) {
         
                   // Redireciona para home caso não haja usuário
-                  $this->message->setMessage("Faça a autenticação para acessar esta página.", "public/index.php");
+                  $this->message->setMessage("Faça a autenticação para acessar esta página.","alert-warning ", "public/index.php");
         
                 }
         
@@ -131,7 +131,7 @@
             if($redirect) {
       
               // Redireciona e apresenta mensagem de sucesso0opo
-              $this->message->setMessage("Cadastrado com sucesso.","public/login.php");
+              $this->message->setMessage("Usuário cadastrado com sucesso!","alert-success", "public/login.php"); 
             }
 
         }

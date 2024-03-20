@@ -1,7 +1,10 @@
 <?php
 require_once("../templates/header.php");
+
+
 ?>
 <main>
+       
     <div id="carouselExampleInterval" class="carousel slide container-fluid" style="padding: 0;"
         data-bs-ride="carousel">
         <div class="carousel-inner">

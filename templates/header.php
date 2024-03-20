@@ -1,7 +1,6 @@
 <?php
 // Inclua os arquivos necessários do seu projeto
-include_once("../config/process.php");
-
+require_once("../config/process.php");
 ?>
 
 <!-- Cabeçalho -->
@@ -63,10 +62,20 @@ include_once("../config/process.php");
                                     style="margin-right: 5px;"></i>Carrinho</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-success" href="../public/login.php"><i class="bi bi-person-fill"
+                            <a class="nav-link" href="../public/login.php"><i class="bi bi-person-fill"
                                     style="margin-right: 5px;"></i>Entrar</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <?php if($_SESSION["msg"]) :?>
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-50 translate-middle alert <?php echo $_SESSION["sts"] ?> alert-dismissible fade show" role="alert" style="z-index: 9999;">
+                <?php echo $_SESSION["msg"]; ?>
+                <!-- Botão para fechar o alert -->
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <?php $_SESSION["msg"] = null ?>
+            </div>
+        </div>
+        <?php endif;?>

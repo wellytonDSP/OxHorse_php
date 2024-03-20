@@ -1,14 +1,14 @@
 <?php
+session_start();
 
     class Message{
-
-
-          public function setMessage($msg,$redirect) {
       
-            $_SESSION["msg"] = $msg;
-  
+
+          public function setMessage($msg,$status,$redirect) {
             
-      
+            $_SESSION["msg"] = $msg;
+            $_SESSION["sts"] = $status;
+  
             if($redirect != "back") {
               header("Location: ../" . $redirect);
             } else {
