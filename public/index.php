@@ -4,7 +4,7 @@ require_once("../templates/header.php");
 
 ?>
 <main>
-       
+
     <div id="carouselExampleInterval" class="carousel slide container-fluid" style="padding: 0;"
         data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -81,184 +81,179 @@ require_once("../templates/header.php");
 
         <h2 class="title mb-3 mt-3" style="text-align: center;">Mais populares</h2>
         <div class="container row mx-auto g-5">
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Braford/Fotos_03.jpeg" class="card-img-top" alt="foto-angus">
+                            </svg>
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
+                    
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Angus/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
 
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm">
+                            <img src="../img/Fotos_Nelore/Foto_02.jpeg" class="card-img-top" alt="foto-angus">
+                            <div class="card-body">
+                                <div class="product-infos ">
+                                    <div class="product-titles">
+                                        <h1 class="title-card">ARG-4414 / Marcos</h1>
+                                        <h2 class="subtitle-card">Proprietario: Fazenda Margorete</h2>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="price">
+                                            R$319
+
+                                        </div>
+                                        <div class="quantity align-self-end">,00/10 doses</div>
+                                    </div>
+                                    <text>Em <text class="parcelas">3x R$8,33 sem juros</text></text>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-sm-12 col-xxl-3">
-                <div class="card ">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                            dy=".3em">Image cap</text>
-                    </svg>
-                    <div class="card-body">
-                        <h5 class="card-title">Sebastião</h5>
-                        <p class="card-text">Pai: CDG LT</p>
-                        <p class="card-text">Mãe: Mimosa</p>
-                        <p class="card-text">Nascido: 18/10/2015</p>
-                        <p class="card-text" style="opacity:10px;">Proprietario: Pecuria Martins</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$300,00 / 10 doses</li>
-                    </ul>
-                    <a href="#" class="stretched-link"></a>
                 </div>
             </div>
         </div>
+
 
         <section class="mt-5 pt-4 pb-4">
             <div class="section-vantagens">

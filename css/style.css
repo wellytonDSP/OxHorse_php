@@ -70,12 +70,16 @@
 @media screen and (max-width: 540px) {
     .img-banner{
         height:200px;
-    }   
+    }
 }
 
 
 @media scren and (max-width: 375px){
     .divs-vantagens{
         width: 200px;
+    }
+    
+    .section-vantagens{
+      width: 100%;
     }
 }
